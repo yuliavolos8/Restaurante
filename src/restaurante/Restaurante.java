@@ -15,7 +15,7 @@ public class Restaurante implements RestauranteOperaciones {
 	public Restaurante() {
 		this.reservas = new ArrayList<>(); 
 	}
-
+//metodo para reservar (fecha, cliente)
 	@Override
 	public void hacerReserva(Cliente cliente, FechaReserva fecha) {
 		if (fecha.fechaValida()) {
@@ -27,7 +27,7 @@ public class Restaurante implements RestauranteOperaciones {
 		}
 
 	}
-
+// polimorfismo
 	@Override
 	public String tomarPedido(Empleado empleado, Cliente cliente, Map<Plato, Integer> mapPlatos) {
 		String resultado = "";
@@ -40,7 +40,7 @@ public class Restaurante implements RestauranteOperaciones {
 
 		return resultado;
 	}
-
+// calculamos suma total por el consumo de un cliente
 	public double generarFactura(Cliente cliente) {
 		double total = 0;
 		for (Map.Entry<Plato, Integer> entry : cliente.getPedidos().entrySet()) {
