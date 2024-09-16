@@ -13,7 +13,7 @@ public class Restaurante implements RestauranteOperaciones {
 	private ArrayList<Cliente> reservas;
 
 	public Restaurante() {
-		this.reservas = new ArrayList<>(); // Inicializar la lista
+		this.reservas = new ArrayList<>(); 
 	}
 
 	@Override
