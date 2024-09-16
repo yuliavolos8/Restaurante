@@ -40,7 +40,7 @@ public class FechaReserva {
 	public String toString() {
 		return String.format("%02d/%02d/%d", dia, mes, anio);
 	}
-
+// metodo para calcular si el año es bisiesto
 	public boolean esBisiesto() {
 		boolean bisiesto = false;
 		if (this.anio % 4 == 0 && this.anio % 100 != 0 || anio % 400 == 0) {
@@ -50,7 +50,7 @@ public class FechaReserva {
 		}
 		return bisiesto;
 	}
-
+// metodo para averiguar cuantos dias tiene cada mes
 	public int cantDiasEnMes() {
 		switch (mes) {
 		case 2:
@@ -66,7 +66,8 @@ public class FechaReserva {
 			return 31;
 		}
 	}
-
+// validamos si el año conciste de 4 numeros
+	
 	public boolean fechaValida() {
 		boolean fechaValida = true;
 		String num = String.valueOf(this.anio);
