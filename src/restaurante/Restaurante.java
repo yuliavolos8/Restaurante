@@ -15,7 +15,7 @@ public class Restaurante implements RestauranteOperaciones {
 	public Restaurante() {
 		this.reservas = new ArrayList<>(); 
 	}
-//metodo para reservar (fecha, cliente)
+//metodo para reservar ( cliente, fecha)
 	@Override
 	public void hacerReserva(Cliente cliente, FechaReserva fecha) {
 		if (fecha.fechaValida()) {
