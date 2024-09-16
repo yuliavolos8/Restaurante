@@ -18,9 +18,8 @@ public class Empleado extends Persona {
 
 	@Override
 	public String toString() {
-		return "Empleado [puesto=" + puesto + ", getNombreCompleto()=" + getNombreCompleto() + ", getTelefono()="
-				+ getTelefono() + ", getE_mail()=" + getE_mail() + ", toString()=" + super.toString() + ", getClass()="
-				+ getClass() + ", hashCode()=" + hashCode() + "]";
+		return "[puesto=" + puesto + "," + super.toString() + "]";
+
 	}
 
 }

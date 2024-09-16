@@ -9,7 +9,7 @@ public class Camarero extends Empleado {
 
 	@Override
 	public String toString() {
-		return "Camarero []";
+		return "Camarero" + super.toString();
 	}
 
 }

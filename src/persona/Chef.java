@@ -9,7 +9,7 @@ public class Chef extends Empleado {
 
 	@Override
 	public String toString() {
-		return "Chef []";
+		return "Chef" + super.toString();
 	}
 
 }
