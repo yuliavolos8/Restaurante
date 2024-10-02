@@ -35,7 +35,7 @@ public class FechaReserva {
 	public void setAnio(int anio) {
 		this.anio = anio;
 	}
-
+//format de fecha , para imprimir
 	@Override
 	public String toString() {
 		return String.format("%02d/%02d/%d", dia, mes, anio);
